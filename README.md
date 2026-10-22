@@ -81,6 +81,20 @@ python tools/dr_trace.py convert --report r.md --pool data-pool.json --records r
 
 ---
 
+## 长什么样
+
+正文里每条论断后面挂的是 `(N)`，点开就是那条记录的原始出处：
+
+![报告正文](shots/report.png)
+
+参考来源段不是"机构名 + 年份 + 链接"，而是**记录 ID + 时间 + 说话人 + 逐字原文**——任何一条你都能拿回原始转写里核对：
+
+![参考来源](shots/references.png)
+
+> 截图由 Edge 无头模式实拍。**未经我肉眼验收**（生成截图的模型读不了图），只用像素探针确认了画面非空白、内容铺满整帧。
+
+---
+
 ## 快速开始
 
 ```bash
