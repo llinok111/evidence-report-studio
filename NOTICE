@@ -1,0 +1,36 @@
+evidence-report-studio
+======================
+
+本项目的报告生成骨架来自开源项目 deep-research，在其基础上做了「自有语料 → 可逐字溯源报告」方向的二次开发。
+
+上游
+----
+名称   deep-research
+作者   hoolulu
+地址   https://github.com/hoolulu/deep-research
+许可   MIT License（见 LICENSE，原文未改动）
+版本   见 VERSION
+
+上游版权声明
+------------
+Copyright (c) 2026 hoolulu
+
+本项目的改动
+------------
+1. 新增 records 数据源（tools/dr_records.py）：把结构化语料表 records.csv 转成数据池，
+   离线运行，不联网、不外扩。替代上游的网页抓取路径。
+2. 引用单位改造：上游按「(机构, 年份, URL) 三元组首次出现顺序」编号，
+   本项目改为以 record_id 作为稳定引用 ID，报告里直接写 [record_id]。
+   原因：位置编号在事实顺序变化时会整体错位，且没有任何机制能发现错位。
+3. 新增 check_citations()（tools/dr_check.py）：把报告里的每条引用逐字回溯到原始记录，
+   引文必须在该记录的 raw_text / clean_text 里逐字命中，否则判 FAIL。
+   上游只有「url 字段非空」检查，不做实质比对 —— 因为网页会变会 404，比对留不住。
+   本项目语料是本地不可变 CSV，所以做得到。
+4. 新增口径审计：按 claim_type 区分「事实陈述 / 个人判断 / 预测 / 传闻」，
+   标为事实的论断其引用记录的 claim_type 必须确为事实陈述。
+5. 报告浏览器与 PDF/DOCX 导出沿用上游实现，未做改动。
+
+新增部分版权
+------------
+Copyright (c) 2026 evidence-report-studio contributors
+以 MIT License 授权，条款见 LICENSE。

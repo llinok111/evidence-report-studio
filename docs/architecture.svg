@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 790" width="900" height="790" role="img" aria-label="evidence-report-studio 数据流">
+<title>evidence-report-studio 数据流</title>
+<desc>从结构化语料表到可逐字回溯的报告：语料经 dr_records 建池、章节撰写、装配成报告，再过 dr_trace 的三道闸门，最后产出可点击引用的报告浏览器。</desc>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#8C959F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<rect width="900" height="790" fill="#FFFFFF"/>
+
+<text x="60" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="600" fill="#1F2328">evidence-report-studio · 数据流</text>
+<text x="60" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656D76">灰色 = 上游 deep-research 原有；蓝色 = 本项目新增；绿色 = 最终产物</text>
+
+<rect x="24" y="96" width="4" height="96" rx="2" fill="#AFB8C1"/>
+<text x="42" y="132" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#656D76">① 语料</text>
+<text x="42" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8C959F">建库.py 产出</text>
+
+<rect x="120" y="96" width="700" height="96" rx="10" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1.2"/>
+<text x="148" y="128" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#1F2328">records.csv</text>
+<text x="148" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#57606A">结构化语料表 · 每条记录带 record_id / raw_text / claim_type / confidence</text>
+<text x="148" y="172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8C959F">1552 条 · 来自一场 4343 行直播转写</text>
+
+<line x1="470" y1="192" x2="470" y2="216" stroke="#8C959F" stroke-width="1.6" marker-end="url(#a)"/>
+
+<rect x="24" y="216" width="4" height="96" rx="2" fill="#0969DA"/>
+<text x="42" y="252" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#0969DA">② 建池</text>
+<text x="42" y="272" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8C959F">本项目新增</text>
+
+<rect x="120" y="216" width="700" height="96" rx="10" fill="#DDF4FF" stroke="#0969DA" stroke-width="1.4"/>
+<text x="148" y="248" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" font-weight="600" fill="#0A3069">tools/dr_records.py</text>
+<text x="148" y="272" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#0A3069">按大纲主题给记录分簇，转成上游数据池格式</text>
+<text x="148" y="292" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#57606A">主题由大纲驱动 · 每条 fact 带 rec_id + quote · 离线，不联网不外扩</text>
+
+<line x1="470" y1="312" x2="470" y2="336" stroke="#8C959F" stroke-width="1.6" marker-end="url(#a)"/>
+
+<rect x="24" y="336" width="4" height="96" rx="2" fill="#AFB8C1"/>
+<text x="42" y="372" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#656D76">③ 生成</text>
+<text x="42" y="392" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8C959F">上游流水线</text>
+
+<rect x="120" y="336" width="700" height="96" rx="10" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1.2"/>
+<text x="148" y="368" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#1F2328">data-pool.json → chapters → report.md</text>
+<text x="148" y="392" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#57606A">过上游原生 check-datapool，再走章节撰写与装配</text>
+<text x="148" y="412" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8C959F">131 条事实 · 4 章 · 6763 字</text>
+
+<line x1="470" y1="432" x2="470" y2="456" stroke="#8C959F" stroke-width="1.6" marker-end="url(#a)"/>
+
+<rect x="24" y="456" width="4" height="152" rx="2" fill="#0969DA"/>
+<text x="42" y="516" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#0969DA">④ 闸门</text>
+<text x="42" y="536" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8C959F">本项目新增</text>
+
+<rect x="120" y="456" width="700" height="152" rx="10" fill="#DDF4FF" stroke="#0969DA" stroke-width="1.4"/>
+<text x="148" y="486" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" font-weight="600" fill="#0A3069">tools/dr_trace.py</text>
+
+<text x="148" y="514" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="600" fill="#0A3069">check</text>
+<text x="210" y="514" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#0A3069">逐字回溯 —— record_id 存在 → 在池内 → 引文能在原文逐字定位 → 数字必须出现在来源原文</text>
+
+<text x="148" y="542" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="600" fill="#0A3069">audit</text>
+<text x="210" y="542" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#0A3069">口径审计 —— 含数字的论断，来源必须是「事实陈述」；明确标注转述可豁免</text>
+
+<text x="148" y="570" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="600" fill="#0A3069">convert</text>
+<text x="210" y="570" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#0A3069">引用落地 —— [record_id] → [(N)](#refN)，参考来源附原文引文</text>
+
+<text x="148" y="594" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#57606A">任一项不过 → FAIL，退出码 1，不许进交付</text>
+
+<line x1="470" y1="608" x2="470" y2="632" stroke="#8C959F" stroke-width="1.6" marker-end="url(#a)"/>
+
+<rect x="24" y="632" width="4" height="96" rx="2" fill="#1A7F37"/>
+<text x="42" y="668" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A7F37">⑤ 产物</text>
+
+<rect x="120" y="632" width="700" height="96" rx="10" fill="#DAFBE1" stroke="#1A7F37" stroke-width="1.4"/>
+<text x="148" y="664" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#04260F">报告 + 可点击引用</text>
+<text x="148" y="688" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#0F5323">每条论断后面的 (N) 都能点开，看到 record_id、时间、说话人、原文引文</text>
+<text x="148" y="708" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#1A7F37">reports-browser/index.html · 支持 PDF / DOCX 导出</text>
+
+<text x="60" y="764" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8C959F">上游 5 个 Python 文件、4 个文档、LICENSE 全部逐字节未改 —— 新增两条路径，不修改原路径</text>
+</svg>

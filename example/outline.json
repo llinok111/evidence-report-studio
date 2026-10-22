@@ -1,0 +1,81 @@
+{
+  "language": "zh",
+  "title": "企智AI落地派直播语料拆解：汽车经销商的 AI 落地生意怎么跑",
+  "target_year": 2026,
+  "time_anchor": {"mode": "relaxed"},
+  "source_suggestions": [],
+  "chapters": [
+    {
+      "title": "汽车经销商的数字公牌与销冠蒸馏",
+      "sections": ["报价与分成结构", "语料采集规模"],
+      "sub_questions": [
+        {
+          "question": "数字公牌卖给经销商的报价、分成与前置费用是怎么定的",
+          "search_keywords": ["数字公牌", "经销商", "厂家", "前置费用", "一年", "2000块钱"],
+          "priority": "high",
+          "counter_keywords": ["经销商不接受", "价格太高"]
+        },
+        {
+          "question": "经销商客服对话语料抓了多少家、实际投放了多少家",
+          "search_keywords": ["经销商", "回复", "抓出来", "100家", "1000多家"],
+          "priority": "high",
+          "counter_keywords": []
+        }
+      ]
+    },
+    {
+      "title": "汽车新媒体投流的规模与自研工具",
+      "sections": ["消耗规模", "投流 agent 的价值主张"],
+      "sub_questions": [
+        {
+          "question": "投流团队的个人消耗、团队总消耗与服务客户数量",
+          "search_keywords": ["投放", "消耗", "8500万", "1.6亿", "2000多家", "投手"],
+          "priority": "high",
+          "counter_keywords": ["数据不可核实"]
+        },
+        {
+          "question": "投流 agent 对投手决策的替代边界在哪里",
+          "search_keywords": ["投流", "agent", "投手", "决策", "素材", "计划"],
+          "priority": "medium",
+          "counter_keywords": ["AI 替代不了投手"]
+        }
+      ]
+    },
+    {
+      "title": "视频模型与算力的报价结构",
+      "sections": ["模型折扣与授权", "算力交付方案"],
+      "sub_questions": [
+        {
+          "question": "视频模型的官方折扣、授权框数与分辨率档位价格",
+          "search_keywords": ["折扣", "2.5", "2.0", "千年框", "300万", "720P", "30秒"],
+          "priority": "high",
+          "counter_keywords": []
+        },
+        {
+          "question": "算力交付为什么有 8 台和 64 台两种方案，风险在哪",
+          "search_keywords": ["8台", "64个", "供应商", "B300", "靠谱"],
+          "priority": "medium",
+          "counter_keywords": []
+        }
+      ]
+    },
+    {
+      "title": "服务商的交付模式与政策窗口",
+      "sections": ["FDE 式交付与人员结构", "补贴窗口的时间约束"],
+      "sub_questions": [
+        {
+          "question": "服务商怎么用 FDE 方式交付，团队人员结构怎么变",
+          "search_keywords": ["FDE", "程序员", "全栈", "交付", "维护", "仓库", "SOP"],
+          "priority": "high",
+          "counter_keywords": ["客户不接受驻场"]
+        },
+        {
+          "question": "数字化转型补贴的覆盖范围与截止时间",
+          "search_keywords": ["2.0", "补贴", "50%", "12月份", "10月份", "MES", "WMS"],
+          "priority": "high",
+          "counter_keywords": []
+        }
+      ]
+    }
+  ]
+}

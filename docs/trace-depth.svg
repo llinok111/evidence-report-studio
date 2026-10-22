@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 610" width="980" height="610" role="img" aria-label="上游与本项目的溯源深度对比">
+<title>溯源深度对比</title>
+<desc>上游 deep-research 的 10 个校验维度都在格式层，溯源深度只到「来源 URL 非空」。本项目补上引文逐字回溯、数字落地、口径审计三项实质校验。</desc>
+
+<rect width="980" height="610" fill="#FFFFFF"/>
+
+<text x="60" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="600" fill="#1F2328">溯源深度对比：格式合规 ≠ 论断可信</text>
+<text x="60" y="72" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656D76">上游 480 行校验器覆盖 10 个维度，但没有一个维度检查「这句话是否真的出自那份来源」</text>
+
+<rect x="60" y="100" width="860" height="46" rx="6" fill="#F6F8FA"/>
+<text x="80" y="129" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#57606A">校验维度</text>
+<text x="560" y="129" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#57606A">上游 deep-research</text>
+<text x="830" y="129" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#0969DA">本项目</text>
+
+<line x1="60" y1="146" x2="920" y2="146" stroke="#D0D7DE" stroke-width="1"/>
+
+<text x="80" y="182" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#1F2328">编码 / BOM / 乱码</text>
+<text x="560" y="182" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="830" y="182" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<line x1="60" y1="198" x2="920" y2="198" stroke="#EAEEF2" stroke-width="1"/>
+
+<text x="80" y="230" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#1F2328">标题层级 / 章节编号 / 目录</text>
+<text x="560" y="230" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="830" y="230" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<line x1="60" y1="246" x2="920" y2="246" stroke="#EAEEF2" stroke-width="1"/>
+
+<text x="80" y="278" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#1F2328">字数 / 元数据 / 章节深度均衡</text>
+<text x="560" y="278" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="830" y="278" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<line x1="60" y1="294" x2="920" y2="294" stroke="#EAEEF2" stroke-width="1"/>
+
+<text x="80" y="326" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#1F2328">引用编号有对应条目</text>
+<text x="560" y="326" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="830" y="326" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<line x1="60" y1="342" x2="920" y2="342" stroke="#EAEEF2" stroke-width="1"/>
+
+<text x="80" y="374" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#1F2328">来源字段非空</text>
+<text x="560" y="374" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#57606A">url 非空</text>
+<text x="830" y="374" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#0969DA">record_id 存在</text>
+<line x1="60" y1="390" x2="920" y2="390" stroke="#D0D7DE" stroke-width="1"/>
+
+<rect x="60" y="390" width="860" height="168" fill="#F0F8FF"/>
+
+<text x="80" y="424" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#0A3069">引文能否逐字回溯到来源原文</text>
+<text x="560" y="424" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#B35900">—</text>
+<text x="830" y="424" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="80" y="444" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#57606A">网页会变会 404，逐字比对留不住 —— 上游做不了</text>
+
+<text x="80" y="476" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#0A3069">正文里的数字是否出现在来源原文</text>
+<text x="560" y="476" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#B35900">—</text>
+<text x="830" y="476" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="80" y="496" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#57606A">论断可以写得含糊，数字编不出来</text>
+
+<text x="80" y="528" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#0A3069">口径区分：事实陈述 / 个人判断 / 预测 / 传闻</text>
+<text x="560" y="528" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#B35900">—</text>
+<text x="830" y="528" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1A7F37">✓</text>
+<text x="80" y="548" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#57606A">含数字的论断若来源是「个人判断」，判 FAIL；明确标注转述可豁免</text>
+
+<text x="60" y="590" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8C959F">蓝色三行是本项目唯一的存在理由。上游不是做得不好，是它的数据源决定了它做不到。</text>
+</svg>
